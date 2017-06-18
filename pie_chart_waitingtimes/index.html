@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {"header":{"title":{"text":"WAITING TIMES","fontSize":36,"font":"courier"},"subtitle":{"text":"Melanoma  Referrals","color":"#999999","fontSize":22,"font":"courier"},"location":"pie-center","titleSubtitlePadding":10},"footer":{"text":"* Source: NHS Scotland 2016","color":"#999999","fontSize":29,"font":"open sans","location":"bottom-left"},"size":{"canvasHeight":600,"canvasWidth":600,"pieInnerRadius":"81%","pieOuterRadius":"70%"},"data":{"sortOrder":"label-desc","content":[{"label":"< 20 days","value":33.3,"color":"#45cb21"},{"label":"> 21 days","value":66.7,"color":"#050505"}]},"labels":{"outer":{"pieDistance":14},"inner":{"format":"value"},"mainLabel":{"fontSize":20},"percentage":{"color":"#999999","fontSize":11,"decimalPlaces":0},"value":{"color":"#ac081f","fontSize":15},"lines":{"enabled":true}},"effects":{"pullOutSegmentOnClick":{"effect":"linear","speed":400,"size":8}},"misc":{"colors":{"segmentStroke":"#000000"}}});
+</script>
+
+</body>
+</html>
+
